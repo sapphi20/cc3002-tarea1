@@ -1,13 +1,21 @@
-abstract class Attacker implements Attackable {
+public abstract class Attacker implements Attackable {
     int HP;
-    int maxHP;
+    int attackPoints;
 
-    public Attacker(int HP, int maxHP) {
+    public Attacker(int HP, int attackPoints) {
         this.HP = HP;
-        this.maxHP = maxHP;
+        this.attackPoints = attackPoints;
     }
 
     public boolean isAlive() {
         return getHP() > 0;
+    }
+
+    public int getHP() {
+        return this.HP;
+    }
+
+    public int getAttackPoints() {
+        return attackPoints;
     }
 }
