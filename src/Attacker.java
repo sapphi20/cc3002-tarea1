@@ -1,10 +1,12 @@
 public abstract class Attacker implements Attackable {
-    int HP;
+    int baseHP;
+    int currentHP;
     int attackPoints;
 
-    public Attacker(int HP, int attackPoints) {
-        this.HP = HP;
+    public Attacker(int baseHP, int attackPoints) {
+        this.baseHP = baseHP;
         this.attackPoints = attackPoints;
+        this.currentHP = baseHP;
     }
 
     public boolean isAlive() {
@@ -12,10 +14,19 @@ public abstract class Attacker implements Attackable {
     }
 
     public int getHP() {
-        return this.HP;
+        return this.currentHP;
     }
 
     public int getAttackPoints() {
-        return attackPoints;
+        return this.attackPoints;
+    }
+
+    public void setHP(int attackPoints) {
+        if(this.isAlive()){
+            this.currentHP -= attackPoints;
+        }
+        if(this.currentHP <= 0){
+            this.currentHP = 0;
+        }
     }
 }

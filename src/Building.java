@@ -1,61 +1,12 @@
-public class Building extends Attacker {
+public abstract class Building extends Attacker {
 
-    public Building(int HP, int attackPoints){
+    public Building(int HP, int attackPoints) {
         super(HP, attackPoints);
     }
 
     @Override
-    public int getHP() {
-        return 0;
-    }
-
-    @Override
     public int getMaxHP() {
-        return HP;
+        return baseHP;
     }
 
-    @Override
-    public int setHP() {
-        return 0;
-    }
-
-    @Override
-    public int attackedByArcherUnit(ArcherUnit archerUnit) {
-        return 0;
-    }
-
-    @Override
-    public int attackedByBarracks(Barracks barracks) {
-        return 0;
-    }
-
-    @Override
-    public int attackedByCastle(Castle castle) {
-        return 0;
-    }
-
-    @Override
-    public int attackedByCavalryUnit(CavalryUnit cavalryUnit) {
-        return 0;
-    }
-
-    @Override
-    public int attackedByInfantryUnit(InfantryUnit infantryUnit) {
-        return 0;
-    }
-
-    @Override
-    public int attackedByMonk(Monk monk) {
-        return 0;
-    }
-
-    @Override
-    public int attackedBySiegeUnit(SiegeUnit siegeUnit) {
-        return 0;
-    }
-
-    @Override
-    public int attackedByVillager(Villager villager) {
-        return 0;
-    }
 }

@@ -1,7 +1,7 @@
 public interface Attackable {
     int getHP();
     int getMaxHP();
-    int setHP();
+    void setHP(int attackPoints);
     int getAttackPoints();
     boolean isAlive();
     int attackedByArcherUnit(ArcherUnit archerUnit);
