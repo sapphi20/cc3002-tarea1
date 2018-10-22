@@ -3,12 +3,6 @@ public abstract class Attacker implements Attackable {
     int currentHP;
     int attackPoints;
 
-    public Attacker(int baseHP, int attackPoints) {
-        this.baseHP = baseHP;
-        this.attackPoints = attackPoints;
-        this.currentHP = baseHP;
-    }
-
     public boolean isAlive() {
         return getHP() > 0;
     }
