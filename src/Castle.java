@@ -4,42 +4,42 @@ public class Castle extends Building {
     }
 
     @Override
-    public int attackedByArcherUnit(ArcherUnit archerUnit) {
-        return 0;
+    public void attackedByArcherUnit(ArcherUnit archerUnit) {
+        this.setHP(0.1*archerUnit.getAttackPoints());
     }
 
     @Override
-    public int attackedByBarracks(Barracks barracks) {
-        return 0;
+    public void attackedByBarracks(Barracks barracks) {
+
     }
 
     @Override
-    public int attackedByCastle(Castle castle) {
-        return 0;
+    public void attackedByCastle(Castle castle) {
+        this.setHP(0.1*castle.getAttackPoints());
     }
 
     @Override
-    public int attackedByCavalryUnit(CavalryUnit cavalryUnit) {
-        return 0;
+    public void attackedByCavalryUnit(CavalryUnit cavalryUnit) {
+        this.setHP(0.3*cavalryUnit.getAttackPoints());
     }
 
     @Override
-    public int attackedByInfantryUnit(InfantryUnit infantryUnit) {
-        return 0;
+    public void attackedByInfantryUnit(InfantryUnit infantryUnit) {
+        this.setHP(0.3*infantryUnit.getAttackPoints());
     }
 
     @Override
-    public int attackedByMonk(Monk monk) {
-        return 0;
+    public void attackedByMonk(Monk monk) {
+
     }
 
     @Override
-    public int attackedBySiegeUnit(SiegeUnit siegeUnit) {
-        return 0;
+    public void attackedBySiegeUnit(SiegeUnit siegeUnit) {
+        this.setHP(2*siegeUnit.getAttackPoints());
     }
 
     @Override
-    public int attackedByVillager(Villager villager) {
-        return 0;
+    public void attackedByVillager(Villager villager) {
+        this.setHP(-0.3*villager.getAttackPoints());
     }
 }

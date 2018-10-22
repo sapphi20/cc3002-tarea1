@@ -4,42 +4,42 @@ public class Monk extends Unit {
     }
 
     @Override
-    public int attackedByArcherUnit(ArcherUnit archerUnit) {
-        return 0;
+    public void attackedByArcherUnit(ArcherUnit archerUnit) {
+        this.setHP(this.getHP());
     }
 
     @Override
-    public int attackedByBarracks(Barracks barracks) {
-        return 0;
+    public void attackedByBarracks(Barracks barracks) {
+
     }
 
     @Override
-    public int attackedByCastle(Castle castle) {
-        return 0;
+    public void attackedByCastle(Castle castle) {
+        this.setHP(this.getHP());
     }
 
     @Override
-    public int attackedByCavalryUnit(CavalryUnit cavalryUnit) {
-        return 0;
+    public void attackedByCavalryUnit(CavalryUnit cavalryUnit) {
+        this.setHP(this.getHP());
     }
 
     @Override
-    public int attackedByInfantryUnit(InfantryUnit infantryUnit) {
-        return 0;
+    public void attackedByInfantryUnit(InfantryUnit infantryUnit) {
+        this.setHP(this.getHP());
     }
 
     @Override
-    public int attackedByMonk(Monk monk) {
-        return 0;
+    public void attackedByMonk(Monk monk) {
+        this.setHP(-0.5*monk.getAttackPoints());
     }
 
     @Override
-    public int attackedBySiegeUnit(SiegeUnit siegeUnit) {
-        return 0;
+    public void attackedBySiegeUnit(SiegeUnit siegeUnit) {
+        this.setHP(this.getHP());
     }
 
     @Override
-    public int attackedByVillager(Villager villager) {
-        return 0;
+    public void attackedByVillager(Villager villager) {
+
     }
 }

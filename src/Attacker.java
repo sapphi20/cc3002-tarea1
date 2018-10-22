@@ -21,12 +21,15 @@ public abstract class Attacker implements Attackable {
         return this.attackPoints;
     }
 
-    public void setHP(int attackPoints) {
-        if(this.isAlive()){
+    public void setHP(double attackPoints) {
+        if (this.isAlive()) {
             this.currentHP -= attackPoints;
         }
-        if(this.currentHP <= 0){
+        if (this.currentHP <= 0) {
             this.currentHP = 0;
+        }
+        if (this.currentHP >= getMaxHP()) {
+            this.currentHP = getMaxHP();
         }
     }
 }

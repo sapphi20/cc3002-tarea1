@@ -1,15 +1,15 @@
 public interface Attackable {
     int getHP();
     int getMaxHP();
-    void setHP(int attackPoints);
+    void setHP(double attackPoints);
     int getAttackPoints();
     boolean isAlive();
-    int attackedByArcherUnit(ArcherUnit archerUnit);
-    int attackedByBarracks(Barracks barracks);
-    int attackedByCastle(Castle castle);
-    int attackedByCavalryUnit(CavalryUnit cavalryUnit);
-    int attackedByInfantryUnit(InfantryUnit infantryUnit);
-    int attackedByMonk(Monk monk);
-    int attackedBySiegeUnit(SiegeUnit siegeUnit);
-    int attackedByVillager(Villager villager);
+    void attackedByArcherUnit(ArcherUnit archerUnit);
+    void attackedByBarracks(Barracks barracks);
+    void attackedByCastle(Castle castle);
+    void attackedByCavalryUnit(CavalryUnit cavalryUnit);
+    void attackedByInfantryUnit(InfantryUnit infantryUnit);
+    void attackedByMonk(Monk monk);
+    void attackedBySiegeUnit(SiegeUnit siegeUnit);
+    void attackedByVillager(Villager villager);
 }
