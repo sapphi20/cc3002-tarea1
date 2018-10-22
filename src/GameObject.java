@@ -1,4 +1,4 @@
-public abstract class Attacker implements Attackable {
+public abstract class GameObject implements Attackable {
     int baseHP;
     int currentHP;
     int attackPoints;

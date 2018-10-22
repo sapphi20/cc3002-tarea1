@@ -1,9 +1,10 @@
-public abstract class Unit extends Attacker {
+public abstract class Unit extends GameObject implements Attacker {
 
     public Unit(int HP, int attackPoints) {
-        super(HP, attackPoints);
+        this.baseHP = HP;
+        this.attackPoints = attackPoints;
+        this.currentHP = baseHP;
     }
-
 
     @Override
     public int getMaxHP() {
