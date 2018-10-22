@@ -4,6 +4,11 @@ public class InfantryUnit extends Unit {
     }
 
     @Override
+    public void attacked(Attackable v) {
+        v.attackedByInfantryUnit(this);
+    }
+
+    @Override
     public void attackedByArcherUnit(ArcherUnit archerUnit) {
         this.setHP(1.2*archerUnit.getAttackPoints());
     }

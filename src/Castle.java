@@ -4,6 +4,11 @@ public class Castle extends Building {
     }
 
     @Override
+    public void attacked(Attackable v) {
+        v.attackedByCastle(this);
+    }
+
+    @Override
     public void attackedByArcherUnit(ArcherUnit archerUnit) {
         this.setHP(0.1*archerUnit.getAttackPoints());
     }

@@ -4,6 +4,11 @@ public class Monk extends Unit {
     }
 
     @Override
+    public void attacked(Attackable v) {
+        v.attackedByMonk(this);
+    }
+
+    @Override
     public void attackedByArcherUnit(ArcherUnit archerUnit) {
         this.setHP(this.getHP());
     }

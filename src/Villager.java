@@ -4,6 +4,11 @@ public class Villager extends Unit {
     }
 
     @Override
+    public void attacked(Attackable v) {
+        v.attackedByVillager(this);
+    }
+
+    @Override
     public void attackedByArcherUnit(ArcherUnit archerUnit) {
         this.setHP(1.5*archerUnit.getAttackPoints());
     }

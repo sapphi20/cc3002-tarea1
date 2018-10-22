@@ -4,6 +4,7 @@ public interface Attackable {
     void setHP(double attackPoints);
     int getAttackPoints();
     boolean isAlive();
+    void attacked(Attackable v);
     void attackedByArcherUnit(ArcherUnit archerUnit);
     void attackedByBarracks(Barracks barracks);
     void attackedByCastle(Castle castle);
