@@ -11,10 +11,6 @@ public abstract class GameObject implements Attackable {
         return this.currentHP;
     }
 
-    public int getAttackPoints() {
-        return this.attackPoints;
-    }
-
     public void setHP(double attackPoints) {
         if (this.isAlive()) {
             this.currentHP -= attackPoints;

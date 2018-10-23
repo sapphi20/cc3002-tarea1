@@ -35,7 +35,7 @@ public class SiegeUnit extends Unit {
 
     @Override
     public void attackedByMonk(Monk monk) {
-
+        this.setHP(0);
     }
 
     @Override
