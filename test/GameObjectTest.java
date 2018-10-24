@@ -25,14 +25,6 @@ public class GameObjectTest {
     public void test() throws Exception {
         aldeano1.attacked(barracas1);
         assertEquals(1200, barracas1.getHP());
-        castillo2.attacked(castillo1);
-        assertEquals(4798, castillo1.getHP());
-        castillo1.setAttackPoints(1000);
-        assertEquals(1000, castillo1.getAttackPoints());
-        caballito.attacked(castillo1);
-        assertEquals(4795, castillo1.getHP());
         castillo1.attacked(caballito);
-        assertEquals(0, caballito.getHP());
-        assertFalse(caballito.isAlive());
     }
 }

@@ -8,6 +8,10 @@ public class ArcherUnitTest {
     private ArcherUnit elfoConArco2;
     private Castle castillo1;
     private CavalryUnit caballito;
+    private SiegeUnit trebuchet;
+    private Monk juanitoElMonje;
+    private InfantryUnit soldadoRyan;
+    private Villager villano;
 
     @Before
     public void setUp() throws Exception {
@@ -15,6 +19,10 @@ public class ArcherUnitTest {
         elfoConArco2 = new ArcherUnit();
         castillo1 = new Castle();
         caballito = new CavalryUnit();
+        trebuchet = new SiegeUnit();
+        juanitoElMonje = new Monk();
+        soldadoRyan = new InfantryUnit();
+        villano = new Villager();
     }
 
     @Test
@@ -26,5 +34,10 @@ public class ArcherUnitTest {
         assertEquals(14, elfoConArco2.getHP());
         castillo1.attacked(elfoConArco2);
         assertEquals(0, elfoConArco2.getHP());
+        trebuchet.attacked(elfoConArco1);
+        juanitoElMonje.attacked(elfoConArco1);
+        soldadoRyan.attacked(elfoConArco1);
+        villano.attacked(elfoConArco1);
+        assertFalse(elfoConArco1.isAlive());
     }
 }
