@@ -1,3 +1,6 @@
+/**
+ * @author Alejandra Alarcón
+ */
 public abstract class GameObject implements Attackable {
     int baseHP;
     int currentHP;

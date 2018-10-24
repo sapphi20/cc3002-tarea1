@@ -1,3 +1,6 @@
+/**
+ * @author Alejandra Alarcón
+ */
 public class Castle extends Building implements Attacker {
     public Castle() {
         super(4800, 11);
@@ -28,11 +31,6 @@ public class Castle extends Building implements Attacker {
     @Override
     public void attackedByArcherUnit(ArcherUnit archerUnit) {
         this.setHP(0.1 * archerUnit.getAttackPoints());
-    }
-
-    @Override
-    public void attackedByBarracks(Barracks barracks) {
-
     }
 
     @Override

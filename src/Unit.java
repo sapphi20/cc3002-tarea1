@@ -1,3 +1,6 @@
+/**
+ * @author Alejandra Alarcón
+ */
 public abstract class Unit extends GameObject implements Attacker {
 
     public Unit(int HP, int attackPoints) {

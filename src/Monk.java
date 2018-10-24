@@ -1,3 +1,6 @@
+/**
+ * @author Alejandra Alarcón
+ */
 public class Monk extends Unit {
     public Monk(){
         super(30, 10);
@@ -11,11 +14,6 @@ public class Monk extends Unit {
     @Override
     public void attackedByArcherUnit(ArcherUnit archerUnit) {
         this.setHP(this.getHP());
-    }
-
-    @Override
-    public void attackedByBarracks(Barracks barracks) {
-
     }
 
     @Override

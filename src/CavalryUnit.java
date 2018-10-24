@@ -1,3 +1,6 @@
+/**
+ * @author Alejandra Alarcón
+ */
 public class CavalryUnit extends Unit {
 
     public CavalryUnit(){
@@ -12,11 +15,6 @@ public class CavalryUnit extends Unit {
     @Override
     public void attackedByArcherUnit(ArcherUnit archerUnit) {
         this.setHP(archerUnit.getAttackPoints());
-    }
-
-    @Override
-    public void attackedByBarracks(Barracks barracks) {
-
     }
 
     @Override

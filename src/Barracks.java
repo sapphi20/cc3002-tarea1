@@ -1,21 +1,14 @@
+/**
+ * @author Alejandra Alarcón
+ */
 public class Barracks extends Building {
     public Barracks(){
         super(1200,0);
     }
 
     @Override
-    public void attacked(Attackable v) {
-        v.attackedByBarracks(this);
-    }
-
-    @Override
     public void attackedByArcherUnit(ArcherUnit archerUnit) {
         this.setHP(0.7*archerUnit.getAttackPoints());
-    }
-
-    @Override
-    public void attackedByBarracks(Barracks barracks) {
-
     }
 
     @Override
@@ -35,7 +28,7 @@ public class Barracks extends Building {
 
     @Override
     public void attackedByMonk(Monk monk) {
-
+        this.setHP(0);
     }
 
     @Override

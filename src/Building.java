@@ -1,3 +1,6 @@
+/**
+ * @author Alejandra Alarcón
+ */
 public abstract class Building extends GameObject {
 
     public Building(int HP, int attackPoints) {

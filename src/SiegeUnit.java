@@ -1,3 +1,6 @@
+/**
+ * @author Alejandra Alarcón
+ */
 public class SiegeUnit extends Unit {
     public SiegeUnit(){
         super(50, 40);
@@ -11,11 +14,6 @@ public class SiegeUnit extends Unit {
     @Override
     public void attackedByArcherUnit(ArcherUnit archerUnit) {
         this.setHP(0.8*archerUnit.getAttackPoints());
-    }
-
-    @Override
-    public void attackedByBarracks(Barracks barracks) {
-
     }
 
     @Override

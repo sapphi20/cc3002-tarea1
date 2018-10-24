@@ -1,3 +1,6 @@
+/**
+ * @author Alejandra Alarcón
+ */
 public class Villager extends Unit {
     public Villager(){
         super(25, 3 );
@@ -11,11 +14,6 @@ public class Villager extends Unit {
     @Override
     public void attackedByArcherUnit(ArcherUnit archerUnit) {
         this.setHP(1.5*archerUnit.getAttackPoints());
-    }
-
-    @Override
-    public void attackedByBarracks(Barracks barracks) {
-
     }
 
     @Override
