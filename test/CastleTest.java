@@ -4,8 +4,8 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class CastleTest {
-    Castle castillo1;
-    SiegeUnit catapulta;
+    private Castle castillo1;
+    private SiegeUnit catapulta;
 
     @Before
     public void setUp() throws Exception {

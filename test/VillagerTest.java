@@ -23,5 +23,10 @@ public class VillagerTest {
         juanito.attacked(castilloRandom);
         dieguito.attacked(castilloRandom);
         assertEquals(4800, castilloRandom.getHP());
+        pedrito.attacked(juanito);
+        dieguito.attacked(juanito);
+        assertEquals(19, juanito.getHP());
+        castilloRandom.attacked(juanito);
+        assertEquals(5, juanito.getHP());
     }
 }
