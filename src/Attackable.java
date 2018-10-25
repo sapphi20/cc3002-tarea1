@@ -3,14 +3,14 @@
  */
 public interface Attackable {
     /**
-     *
-     * @return vida actual de la entidad
+     * Muestra el valor de currentHP
+     * @return int que muestra los puntos de vida actuales de la entidad
      */
     int getHP();
 
     /**
-     *
-     * @return vida maxima que puede tener la entidad
+     * Muestra el valor de
+     * @return int que muestra la vida maxima que puede tener la entidad
      */
     int getMaxHP();
 
@@ -21,50 +21,57 @@ public interface Attackable {
     void setHP(double attackPoints);
 
     /**
-     *
-     * @return True si la entidad está viva (tiene más de 0 puntos de vida)
+     * Verifica si la vida de la entidad es mayor a cero
+     * @return boolean que es True si la vida es mayor a cero, False en el caso contrario
      */
     boolean isAlive();
 
     /**
-     *
-     * @param archerUnit
+     * Modifica la vida de la entidad que es atacada por una ArcherUnit
+     * usando setHP
+     * @param archerUnit ArcherUnit
      */
     void attackedByArcherUnit(ArcherUnit archerUnit);
 
     /**
-     *
-     * @param castle
+     * Modifica la vida de la entidad que es atacada por un Castle
+     * usando setHP
+     * @param castle Castle
      */
     void attackedByCastle(Castle castle);
 
     /**
-     *
-     * @param cavalryUnit
+     * Modifica la vida de la entidad que es atacada por un CavalryUnit
+     * usando setHP
+     * @param cavalryUnit CavalryUnit
      */
     void attackedByCavalryUnit(CavalryUnit cavalryUnit);
 
     /**
-     *
-     * @param infantryUnit
+     *Modifica la vida de la entidad que es atacada por una InfantryUnit
+     * usando setHP
+     * @param infantryUnit InfantryUnit
      */
     void attackedByInfantryUnit(InfantryUnit infantryUnit);
 
     /**
-     *
-      * @param monk
+     * Modifica la vida de la entidad que es atacada por un Monk
+     * usando setHP
+     * @param monk Monk
      */
     void attackedByMonk(Monk monk);
 
     /**
-     *
-     * @param siegeUnit
+     * Modifica la vida de la entidad que es atacada por una SiegeUnit
+     * usando setHP
+     * @param siegeUnit SiegeUnit
      */
     void attackedBySiegeUnit(SiegeUnit siegeUnit);
 
     /**
-     *
-     * @param villager
+     * Modifica la vida de la entidad que es atacada por un Villager
+     * usando setHP
+     * @param villager Villager
      */
     void attackedByVillager(Villager villager);
 }
